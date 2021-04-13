@@ -1,5 +1,9 @@
+const borderRadiusRange = document.getElementById('borderRadiusRange');
+
+borderRadiusRange.addEventListener('change', borderRadiusSliderChange);
+
 function borderRadiusSliderChange(){
-    let radius = document.getElementById("borderRadiusRange").value;
+    let radius = borderRadiusRange.value;
     document.getElementById("borders1").style.borderRadius = radius + "px";
     document.getElementById("outputText").innerHTML = "Radius value: " + radius + "px";
 }
